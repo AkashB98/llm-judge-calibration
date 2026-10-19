@@ -1,0 +1,101 @@
+{
+  "evals": [
+    {
+      "detail": {
+        "n": 48
+      },
+      "name": "corpus_size",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "oracle_golden_consistency",
+      "passed": true
+    },
+    {
+      "detail": {
+        "mae": 0.038,
+        "spearman": 0.938
+      },
+      "name": "calibrated_agreement",
+      "passed": true
+    },
+    {
+      "detail": {
+        "ece": 0.0083,
+        "verdict": "PASS"
+      },
+      "name": "calibrated_calibration",
+      "passed": true
+    },
+    {
+      "detail": {
+        "drift_stat": 0.1493,
+        "ece": 0.0415,
+        "verdict": "WARN"
+      },
+      "name": "overconfident_drift",
+      "passed": true
+    },
+    {
+      "detail": {
+        "mae": 0.1073,
+        "verdict": "FAIL"
+      },
+      "name": "noisy_failure",
+      "passed": true
+    },
+    {
+      "detail": {
+        "harsh_resid": -0.1237,
+        "lenient_resid": 0.0616
+      },
+      "name": "leniency_direction",
+      "passed": true
+    },
+    {
+      "detail": {
+        "flags": {
+          "calibrated": false,
+          "lenient": false,
+          "verbosity_biased": true
+        }
+      },
+      "name": "verbosity_probe_selective",
+      "passed": true
+    },
+    {
+      "detail": {
+        "biased_flip": 1.0,
+        "calibrated_flip": 0.0
+      },
+      "name": "position_probe_selective",
+      "passed": true
+    },
+    {
+      "detail": {
+        "skew_stat": 0.1332,
+        "verdict": "FAIL"
+      },
+      "name": "rubric_mismatch_safety",
+      "passed": true
+    },
+    {
+      "detail": {
+        "md5": "a62dba1e6b97ceaacdd8770693b49174"
+      },
+      "name": "scorecard_determinism",
+      "passed": true
+    },
+    {
+      "detail": {
+        "calibrated_brier": 0.0492,
+        "overconfident_brier": 0.0561
+      },
+      "name": "brier_sanity",
+      "passed": true
+    }
+  ],
+  "n_evals": 12,
+  "n_passed": 12
+}
